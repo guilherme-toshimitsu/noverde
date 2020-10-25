@@ -1,7 +1,7 @@
 module.exports = () => {
-  const SEVERITY = process.env.NODE_ENV === 'development' ? 'warn' : 'error';
   return {
-    extends: ['airbnb', 'prettier'],
+    parser: "babel-eslint",
+    extends: ['airbnb', 'plugin:prettier/recommended'],
     plugins: ['prettier'],
     env: {
       browser: true,
@@ -10,8 +10,8 @@ module.exports = () => {
       commonjs: true,
     },
     rules: {
-      'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-      'prettier/prettier': SEVERITY,
+      'react/jsx-filename-extension': 0,
+      'prettier/prettier': 'warn',
     },
   };
 };

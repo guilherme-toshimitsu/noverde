@@ -45,6 +45,11 @@ module.exports = () => {
           test: /\.json$/,
           loader: 'json',
         },
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: ['eslint-loader']
+        }
       ],
     },
     plugins: [
