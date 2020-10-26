@@ -19,41 +19,41 @@ const StyledButton = styled.button.attrs((props) => ({
   outline: none;
   color: white;
   width: 40%;
-    ${({ theme }) => theme.breakpoints.down('sm')`
+  ${({ theme }) => theme.breakpoints.down('sm')`
     width: 50%;
   `}
-    ${({ theme }) => css`
-      ${theme.typography.button};
+  ${({ theme }) => css`
+    ${theme.typography.button};
+  `}
+    ${({ disabled, variant, color }) =>
+    !disabled &&
+    variant === 'contained' &&
+    css`
+      background-color: ${({ theme }) => theme.palette[color].main};
+
+      :hover {
+        background-color: ${({ theme }) => theme.palette[color].dark};
+      }
     `}
     ${({ disabled, variant, color }) =>
-      !disabled &&
-      variant === 'contained' &&
-      css`
-        background-color: ${({ theme }) => theme.palette[color].main};
+    !disabled &&
+    variant === 'outlined' &&
+    css`
+      background-color: white;
+      border: 2px solid ${({ theme }) => theme.palette[color].main};
+      color: ${({ theme }) => theme.palette[color].main};
 
-        :hover {
-          background-color: ${({ theme }) => theme.palette[color].dark};
-        }
-      `}
-    ${({ disabled, variant, color }) =>
-      !disabled &&
-      variant === 'outlined' &&
-      css`
-        background-color: white;
-        border: 2px solid ${({ theme }) => theme.palette[color].main};
-        color: ${({ theme }) => theme.palette[color].main};
-
-        :hover {
-          background-color: ${({ theme }) => theme.palette[color].light};
-        }
-      `}
+      :hover {
+        background-color: ${({ theme }) => theme.palette[color].light};
+      }
+    `}
     ${({ disabled }) =>
-      disabled &&
-      css`
-        pointer-events: none;
-        cursor: default;
-        background-color: ${({ theme }) => theme.palette.grey400.main};
-      `};
+    disabled &&
+    css`
+      pointer-events: none;
+      cursor: default;
+      background-color: ${({ theme }) => theme.palette.grey400.main};
+    `};
 `;
 
 StyledButton.propTypes = {

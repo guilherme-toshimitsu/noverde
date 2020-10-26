@@ -1,0 +1,12 @@
+/**/__tests__/*
+/**/styles.js
+webpack.config.js
+.git
+.vscode
+node_modules/
+public/
+dost/
+coverage/
+src/services/mock/**
+src/setupTest.js
+src/services/api/mockInterceptors.js

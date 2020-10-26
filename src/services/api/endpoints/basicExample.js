@@ -1,9 +1,10 @@
 import api from '../api';
 
-const path = '/teste/mock'
+const path = '/teste/mock';
 
-const getBasicExample = params => api.request(`${path}`, {params, method: 'GET'})
+const getBasicExample = (params) =>
+  api.request(`${path}`, { params, method: 'GET' });
 
 export default {
   getBasicExample,
-}
+};

@@ -4,13 +4,7 @@ import defaultTheme from '../theme';
 import { render } from '@testing-library/react';
 
 function renderWithTheme(children) {
-  return render(
-      <ThemeProvider theme={defaultTheme}>
-        {children}
-      </ThemeProvider>
-    )
+  return render(<ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>);
 }
 
-export {
-  renderWithTheme
-}
+export { renderWithTheme };
