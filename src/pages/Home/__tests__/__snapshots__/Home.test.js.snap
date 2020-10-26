@@ -22,13 +22,14 @@ Object {
           >
             <input
               class="sc-eCApGN eSUYAQ"
+              data-testid="input-cpf"
               placeholder="Informe o seu CPF"
             />
           </div>
           <button
             class="sc-bdnylx kKDxdW"
             color="primary"
-            data-testid="go-to-seller"
+            data-testid="button-cpf"
             disabled=""
             type="button"
           >
@@ -56,13 +57,14 @@ Object {
         >
           <input
             class="sc-eCApGN eSUYAQ"
+            data-testid="input-cpf"
             placeholder="Informe o seu CPF"
           />
         </div>
         <button
           class="sc-bdnylx kKDxdW"
           color="primary"
-          data-testid="go-to-seller"
+          data-testid="button-cpf"
           disabled=""
           type="button"
         >

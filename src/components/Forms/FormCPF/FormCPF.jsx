@@ -43,6 +43,7 @@ const FormCPF = ({ onSuccess }) => {
       </StyledTitle>
       <StyledInputContainer>
         <StyledInput
+          data-testid="input-cpf"
           placeholder={'Informe o seu CPF'}
           onBlur={(event) => setCPF(event.target.value)}
           error={error}
@@ -50,11 +51,11 @@ const FormCPF = ({ onSuccess }) => {
             e.keyCode === 13 ? e.target.blur() : null;
           }}
         />
-        {error && <StyledP>{error}</StyledP>}
+        {error && <StyledP data-testid="error-cpf">{error}</StyledP>}
       </StyledInputContainer>
       <Button
         disabled={!CPF || !!error}
-        data-testid={'go-to-seller'}
+        data-testid={'button-cpf'}
         onClick={() => onSubmit()}
         color="primary"
         variant="contained"

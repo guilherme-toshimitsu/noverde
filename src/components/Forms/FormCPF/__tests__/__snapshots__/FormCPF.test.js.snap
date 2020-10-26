@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormCPF> loads input a failed value 1`] = `
+<p
+  class="sc-gKAblj bMOaAl"
+  data-testid="error-cpf"
+>
+  CPF Invalido
+</p>
+`;
+
+exports[`<FormCPF> loads renders 1`] = `
+<DocumentFragment>
+  <h2
+    class="sc-jSFkmK bUgUTJ"
+  >
+    Ola, queremos te ver #NOVERDE, para isso precisamos do seu CPF
+  </h2>
+  <div
+    class="sc-gtssRu jQJSzM"
+  >
+    <input
+      class="sc-eCApGN eSUYAQ"
+      data-testid="input-cpf"
+      placeholder="Informe o seu CPF"
+    />
+  </div>
+  <button
+    class="sc-bdnylx kKDxdW"
+    color="primary"
+    data-testid="button-cpf"
+    disabled=""
+    type="button"
+  >
+    PROXIMO
+  </button>
+</DocumentFragment>
+`;
