@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> creates a Button component 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdnylx gJGOEz"
+    color="primary"
+    type="button"
+  />
+</DocumentFragment>
+`;
+
+exports[`<Button /> creates a disabled Button component 1`] = `[Function]`;

@@ -6,47 +6,69 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="Home-root-1"
+        class="sc-iCoHVE jpsyLn"
+        color="grey400"
       >
-        Hello First Test
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-          data-testid="go-to-seller"
-          tabindex="0"
-          type="button"
+        <div
+          class="sc-fujyUd jLtitf"
         >
-          <span
-            class="MuiButton-label"
+          <h2
+            class="sc-jSFkmK bUgUTJ"
           >
-            GoToSeller
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
+            Ola, queremos te ver #NOVERDE, para isso precisamos do seu CPF
+          </h2>
+          <div
+            class="sc-gtssRu jQJSzM"
+          >
+            <input
+              class="sc-eCApGN eSUYAQ"
+              placeholder="Informe o seu CPF"
+            />
+          </div>
+          <button
+            class="sc-bdnylx kKDxdW"
+            color="primary"
+            data-testid="go-to-seller"
+            disabled=""
+            type="button"
+          >
+            PROXIMO
+          </button>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="Home-root-1"
+      class="sc-iCoHVE jpsyLn"
+      color="grey400"
     >
-      Hello First Test
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-        data-testid="go-to-seller"
-        tabindex="0"
-        type="button"
+      <div
+        class="sc-fujyUd jLtitf"
       >
-        <span
-          class="MuiButton-label"
+        <h2
+          class="sc-jSFkmK bUgUTJ"
         >
-          GoToSeller
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
+          Ola, queremos te ver #NOVERDE, para isso precisamos do seu CPF
+        </h2>
+        <div
+          class="sc-gtssRu jQJSzM"
+        >
+          <input
+            class="sc-eCApGN eSUYAQ"
+            placeholder="Informe o seu CPF"
+          />
+        </div>
+        <button
+          class="sc-bdnylx kKDxdW"
+          color="primary"
+          data-testid="go-to-seller"
+          disabled=""
+          type="button"
+        >
+          PROXIMO
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],

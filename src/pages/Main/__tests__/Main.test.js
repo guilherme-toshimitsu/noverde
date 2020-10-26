@@ -1,10 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import Main from '..';
+import { renderWithTheme} from '@commons/utils/renderWithTheme'
 
 describe('<Main> Main Container Page', () => {
   it('renders', () => {
-    const container = render(<Main />);
+    const container = renderWithTheme(<Main />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });
