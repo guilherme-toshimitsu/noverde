@@ -38,30 +38,31 @@ const CreditApproved = ({ history }) => {
               </StyledP>
             )}
           </FlexRow>
-          <FlexRow>
-            <Row>
-              <Col md={4} sm={12}>
-                <ValueText
-                  text={'Limite liberado'}
-                  value={`R$ ${approvedValue}`}
-                />
-              </Col>
-              <Col md={4} sm={12}>
-                <ValueText
-                  text={'Parcelas para pagar'}
-                  value={`${response.period} x R$ ${parseFloat(
-                    response.installment
-                  ).toFixed(2)}`}
-                />
-              </Col>
-              <Col md={4} sm={12}>
-                <ValueText
-                  text={'Primeiro Vencimento'}
-                  value={`${response.first_due_date.replaceAll('-', '/')}`}
-                />
-              </Col>
-            </Row>
-          </FlexRow>
+          <Row>
+            <Col md={4} sm={12}>
+              <ValueText
+                text={'Limite liberado'}
+                value={`R$ ${approvedValue}`}
+              />
+            </Col>
+            <Col md={4} sm={12}>
+              <ValueText
+                text={'Parcelas para pagar'}
+                value={`${response.period} x R$ ${parseFloat(
+                  response.installment
+                ).toFixed(2)}`}
+              />
+            </Col>
+            <Col md={4} sm={12}>
+              <ValueText
+                text={'Primeiro Vencimento'}
+                value={`${
+                  response.first_due_date &&
+                  response.first_due_date.replace(/-/g, '/')
+                }`}
+              />
+            </Col>
+          </Row>
         </FlexContainerColumnReversable>
       </StyledCenter>
     </StyledContainer>

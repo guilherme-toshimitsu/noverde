@@ -44,7 +44,7 @@ const FormCPF = ({ onSuccess }) => {
       <StyledInputContainer>
         <StyledInput
           data-testid="input-cpf"
-          placeholder={'Informe o seu CPF'}
+          placeholder={'Informe o seu CPF (Numeros)'}
           onBlur={(event) => setCPF(event.target.value)}
           error={error}
           onKeyDown={(e) => {

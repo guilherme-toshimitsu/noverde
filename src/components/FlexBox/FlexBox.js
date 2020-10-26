@@ -2,8 +2,9 @@ import styled, { css } from 'styled-components';
 
 //Implementar Mais GridStyle Bootsrapt...
 const FlexContainerColumnReversable = styled.div`
+  display: flex;
   flex-direction: column;
-  ${({ theme, sm }) => theme.breakpoints.down('sm')`
+  ${({ theme }) => theme.breakpoints.down('sm')`
   flex-direction: column-reverse;
 `};
 `;

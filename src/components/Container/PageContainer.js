@@ -9,14 +9,14 @@ const PageContainer = styled.div.attrs((props) => ({
 }))`
   margin: 0 auto;
   overflow: none;
-  height: calc(100vh - 202px);
+  min-height: calc(100vh - 202px);
   text-align: left;
   border-top: ${({ theme, color }) => `2px solid ${theme.palette[color].dark}`};
   background-color: ${({ theme, background }) =>
     theme.palette[background].main};
   ${({ theme }) => theme.breakpoints.down('sm')`
   border: none;
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 140px);
 `};
 `;
 
