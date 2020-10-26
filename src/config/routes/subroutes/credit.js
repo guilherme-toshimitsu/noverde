@@ -4,6 +4,8 @@ import CreditMain, {
   CreditDenied,
 } from '@pages/Credit';
 
+import { NotFound } from '@pages/Error'
+
 const route = {
   path: ['/credit'],
   component: CreditMain,
@@ -26,6 +28,10 @@ const route = {
       protected: true,
       exact: true,
     },
+    {
+      path: ['/credit/*'],
+      component: NotFound,
+    }
   ],
 };
 
